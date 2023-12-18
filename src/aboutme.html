@@ -3,34 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>🖤soliyana's  persoanal site🖤</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  </head>
 <body>
-    <img src="./image/photot.jpg" alt="soliyana's pic">
-    <h1>About me</h1>
-    <a href="home.html">home</a>
-   <a href="hobbies.html">hobbies</a>
-   <a href="resume.html">resume</a>
-   <a href="contact.html">contact</a>
+ <div class="container has-background-danger-light">
+  <header class="header">
+    
+    <nav class="navbar has-shadow">
+      <div class="navbar-brand">
+           
+        <a class="navbar-item">
+           <img src="./image/photot.jpg" alt="soliyana's pic">
+        </a>
+        <h1 class=" is-size-1 title has-text-centered ml-6 has-text-success is-uppercase">about me</h1>
+        <a class="navbar-burger" id="burger">
+           <span></span>
+           <span></span>
+           <span></span>
+        </a>
+        
+      </div>
+       
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+            <a href="./home.html" class="navbar-item">home</a>
+            <a href="./hobbies.html" class="navbar-item">hobbies</a> 
+            <a href="./resume.html"  class="navbar-item">resume</a>
+            <a href="./contact.html" class="navbar-item">contact</a> 
+            
+         </div>   
+       </div>    
+    </nav>
+    <script>
+      const burgerIcon = document.querySelector('#burger');
+      const navbarmenu = document.querySelector('#nav-links');
+
+
+      burgerIcon.addEventListener('click', () => {
+      navbarmenu.classList.toggle('is-active');
+     });
+     </script> 
+  </header>
+ 
+    
+    
     <hr>
-  <img src="./image/photot.jpg" alt="proffessional id pic of soliyana" >
-  <br>
-  
+    <section class="section">
+      <div class="container image is-1by1">
+        <img src="./image/photot.jpg" alt="proffessional id pic of soliyana" class="image" width="300" height="400">
+     <br>
+    </div>
+    </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+      <div class="column video is-1x1  has-text-centered">
+      <iframe src="https://www.youtube.com/embed/3KfVy9Sw7ms?si=GnkSsacK9sfgW2_g" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class=" video is-128*128"  width="300" height="400" ></iframe>>
+      </div>
+      </div>
+     <p class=" paragraph py-5 is-size-5">My Name is Soliyana and I am a professional photographer with over 5 years experience in the industry. i am 21 years old and am an orthodox. i hide and find peace of mind through holy mezmur and the holy bible.</p>
+     <p class="paragraph py-3 is-size-5">My name is one of the biblical names which means <q>moon</q>. it was the  other name of saint mary. eventhough i dont deserve it, i pretty much love my name. </p>
     
-     <iframe src="https://www.youtube.com/embed/3KfVy9Sw7ms?si=GnkSsacK9sfgW2_g" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
-    
-    <p>My Name is Soliyana and I am a professional photographer with over 5 years experience in the industry. i am 21 years old and am an orthodox. i hide and find peace of mind through holy mezmur and the holy bible.</p>
-    <p>my name is one of the biblical names which means <q>moon</q>. it was the  other name of saint mary. eventhough i dont deserve it, i pretty much love my name. </p>
-    <footer>
-        <p>all rights are reserved</p>
-  
-        <aside>
-           <address>
-              <i class="fas fa-location"></i> ADDIS ABABA<br>
-              <i class="fa-solid fa-phone"></i> +251 966798231 <br>
-              <a href="mailto:soliyanakewani228@gmail.com"><i class="fa-solid fa-envelope"></i>soliyanakewani228@gmail.com</a></address>
-          
-        </aside>
-     </footer> 
+  </section>
+   <hr>
+   <footer class="footer">
+    <div class="content ">
+        
+        <div class="columns ">
+            <div class="column">
+              <p class="subtitle">all rights are reserved</p>
+
+            </div>
+            <div class="column">
+                <p class="subtitle"><i class="fas fa-phone"></i> +251 966798231</p>
+            </div>
+            <div class="column">
+                <p class="subtitle"><img src="./image/download.jpeg" alt="email logo" class="image is-32x32"> <a href="mailto:soliyanakewani228@gmail.com"><i class="fas fa-envelope"></i>soliyanakewani228@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
